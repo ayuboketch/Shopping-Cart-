@@ -47,13 +47,13 @@ The E-commerce Website project aims to create a robust and user-friendly online 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/e-commerce-website.git
+   git clone https://github.com/ayuboketch/ShoppingCart.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd e-commerce-website
+   cd ShoppingCart
    ```
 
 3. Install the dependencies:
@@ -75,10 +75,11 @@ The E-commerce Website project aims to create a robust and user-friendly online 
 ## Screenshots 📸
 
 Here are some screenshots showcasing the different pages and features of the E-commerce Website:
+![Screenshot 2024-11-15 at 17 34 24](https://github.com/user-attachments/assets/b878fe05-ead6-4434-8312-4d9b4c4439e2)
 
-![Homepage](screenshots/homepage.png)
-![Products Page](screenshots/products-page.png)
-![Product Detail](screenshots/product-detail.png)
+![Homepage](![Screenshot 2024-11-15 at 17 19 42](https://github.com/user-attachments/assets/ad209fd6-0a52-4c5a-807a-0cf9ae6955b0))
+![Products Page](![Screenshot 2024-11-15 at 17 31 09](https://github.com/user-attachments/assets/5f260859-68f1-4f89-a9f2-d22a5429823d))
+![Product Detail](![Screenshot 2024-11-15 at 17 34 24](https://github.com/user-attachments/assets/b878fe05-ead6-4434-8312-4d9b4c4439e2))
 
 ## Contributing 🤝
 
