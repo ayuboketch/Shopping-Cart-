@@ -76,9 +76,13 @@ The E-commerce Website project aims to create a robust and user-friendly online 
 
 Here are some screenshots showcasing the different pages and features of the E-commerce Website:
 
-
+##Homepage
 ![Home Page](https://github.com/user-attachments/assets/ad209fd6-0a52-4c5a-807a-0cf9ae6955b0)
+
+##Products Page
 ![Products Page](https://github.com/user-attachments/assets/5f260859-68f1-4f89-a9f2-d22a5429823d)
+
+##Product Detail
 ![Product Detail](https://github.com/user-attachments/assets/b878fe05-ead6-4434-8312-4d9b4c4439e2)
 
 ## Contributing 🤝
@@ -88,4 +92,24 @@ Contributions are welcome! If you find any issues or have ideas for improvements
 ## License 📜
 
 This project is licensed under the [MIT License](LICENSE).
-```
+```MIT License
+
+Copyright (c) 2024 ayuboketch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
