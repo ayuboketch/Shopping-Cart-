@@ -1,0 +1,176 @@
+.ProductPageContainer {
+    max-height: 70rem;
+    width: 79vw;
+    max-width: 87.5%;
+    margin: 1rem auto;
+    display: flex;
+    gap: 1rem;
+    background: rgba( 58, 85, 58, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(30, 150, 46, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 0.5px solid rgba(121, 108, 108, 0.18);
+    display: none;
+}
+
+.ProductNameDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    min-width: 20rem;
+}
+
+.ProductImage {
+    width: 80%;
+    height: 30%;
+    max-width: 300px;
+    margin: 1rem auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba( 58, 85, 58, 0 );
+    box-shadow: 0 8px 32px 0 rgba(52, 74, 55, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 0.5px solid rgba(36, 51, 37, 0.18);
+    image-rendering: auto;
+    flex-wrap: wrap;
+}
+.ProductImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.ProductName,
+.ProductDetails {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+}
+.ProductDetails {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 10rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+/* Resizable handle */
+.resize-handle {
+    width: 5px;
+    cursor: col-resize;
+    background-color: #ccc;
+}
+
+/* Actual product details container */
+.ProductDetailsActual {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.ProductNameActual,
+.ProductsActualDetails {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 1rem auto;
+    text-align: center;
+}
+.ProductsActualDetails {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 60rem;
+    margin: 1rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 58, 85, 58, 0 );
+    box-shadow: 0 8px 32px 0 rgba(52, 74, 55, 0.37);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 0.5px solid rgba(36, 51, 37, 0.18);
+    text-align: 2rem left;
+    padding: 1rem;
+}
+.ProductDescription {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 60%;
+    max-height: 80%;
+    text-align: left;
+    overflow: auto;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .ProductPageContainer {
+        flex-direction: column;
+        width: 90vw;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        overflow: scroll;
+    }
+
+    .ProductNameDetails,
+    .ProductDetailsActual {
+        width: 100%;
+        padding: 0.5rem;
+        /* border: 1px solid red; */
+        min-width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .ProductImage {
+        width: 90%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .ProductName,
+    .ProductDetails,
+    .ProductNameActual,
+    .ProductsActualDetails {
+        width: 95%;
+    }
+
+    /* Hide resize handle on mobile */
+    .resize-handle {
+        display: none;
+    }
+    .ProductDescription {
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 1rem auto;
+        /* max-width: 60%;
+        max-height: 80%; */
+        text-align: left;
+        overflow: scroll;
+    }
+}
+.incrementButton {
+    margin: 20px;
+}

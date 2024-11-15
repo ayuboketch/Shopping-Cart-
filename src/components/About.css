@@ -1,0 +1,145 @@
+:root {
+  color: var(white);
+}
+.about-page {
+  width: 100dvw;
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  /* flex-direction: column; */
+}
+
+.hero {
+  width: 90dvw;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.mission {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.mission p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.7;
+  color: white;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  /* color: white; */
+}
+
+.stat-item {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  color: #2563eb;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  color: #111827;
+  margin: 0.5rem 0;
+}
+
+.stat-item p {
+  color: #6b7280;
+}
+
+.team {
+  margin-bottom: 4rem;
+}
+
+.team h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.member-image {
+  width: 150px;
+  height: 150px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.team-member h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  color: #6b7280;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

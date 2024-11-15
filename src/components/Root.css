@@ -1,0 +1,12 @@
+.root {
+    /* border: 1px solid red; */
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.active-link {
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+}
