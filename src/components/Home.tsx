@@ -16,7 +16,6 @@ import {
   ShoppingCart,
   FavoriteBorder
 } from '@mui/icons-material';
-import { red } from '@mui/material/colors';
 
 interface Product {
   id: number;
@@ -140,14 +139,13 @@ const Home: React.FC = () => {
   }
 
   return (
-    <Container maxWidth="xxl"
+    <Container maxWidth={false}
     sx={{
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'column',
       width: '100dvw',
-      border: '1px solid red'
     }}
     >
       {/* Hero Section */}

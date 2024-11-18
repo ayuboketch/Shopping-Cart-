@@ -62,7 +62,7 @@ const ProductDetailsPage: React.FC = () => {
 
   if (error) { // Display error message if there's an error
     return (
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', border: '1px solid red', borderRadius: '10px', padding: '20px' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', borderRadius: '10px', padding: '20px' }}>
         <Typography variant="h6" color="error">{error}</Typography>
       </Box>
     );

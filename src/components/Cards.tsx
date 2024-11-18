@@ -3,7 +3,6 @@ import React from 'react';
 import { Card, CardContent, Typography, Box, Rating } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import './Card.css'
-import ProductDetailsPage from './ProductDetailsPage';
 
 interface Product {
   id: number;
@@ -25,20 +24,22 @@ interface CardsProps {
 const Cards: React.FC<CardsProps> = ({ product }) => {
   const navigate = useNavigate();
 
-  const handleClick: React.MouseEventHandler<HTMLDivElement> = () => {
+  const handleClick = () => {
     navigate(`/product/${product.id}`);
-    // navigate(`/ProductDetailsPage`);
   }
 
   return (
     <Card 
-      onClick={() => handleClick(0)}
+      onClick={() => handleClick}
       sx={{ 
         cursor: 'pointer', 
         maxWidth: 300, 
         height: 400,
-        margin: 'auto', 
-        border: '1px solid red' }}
+        borderRadius: '20px',
+        margin: '10px',
+        marginLeft: '150px',
+        marginTop: '50px'
+       }}
     >
       <Box sx={{ position: 'relative', p: 2, }}>
         <Box
@@ -49,7 +50,7 @@ const Cards: React.FC<CardsProps> = ({ product }) => {
             width: '100%',
             height: 200,
             objectFit: 'contain',
-            border: '1px solid red',
+            borderRadius: '20px',
           }}
         />
       </Box>

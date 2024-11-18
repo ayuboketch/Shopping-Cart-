@@ -93,14 +93,14 @@ const Navbar = () => {
           onClose={() => setMobileMenuOpen(false)}
         >
           <List sx={{ width: 250 }}>
-            <ListItem button component={Link} to="/" onClick={() => setMobileMenuOpen(false)}>
-              <ListItemText primary="Home" />
-            </ListItem>
-            <ListItem button component={Link} to="/products" onClick={() => setMobileMenuOpen(false)}>
-              <ListItemText primary="Products" />
-            </ListItem>
-          </List>
-        </Drawer>
+          <ListItem component={Link} to="/" onClick={() => setMobileMenuOpen(false)} button>
+            <ListItemText primary="Home" />
+          </ListItem>
+          <ListItem component={Link} to="/products" onClick={() => setMobileMenuOpen(false)} button>
+            <ListItemText primary="Products" />
+          </ListItem>
+        </List>
+
 
         <Menu
           anchorEl={anchorEl}
