@@ -29,7 +29,7 @@ const ProductsPage = () => {
   }
 
   return (
-    <Container maxWidth="xxl" sx={{ py: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+    <Container maxWidth="xl" sx={{ py: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
       <Typography variant="h4" gutterBottom>
         All Products
       </Typography>

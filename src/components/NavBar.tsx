@@ -91,7 +91,7 @@ const Navbar = () => {
           anchor="left"
           open={mobileMenuOpen}
           onClose={() => setMobileMenuOpen(false)}
-        >
+        />
           <List sx={{ width: 250 }}>
           <ListItem component={Link} to="/" onClick={() => setMobileMenuOpen(false)} button>
             <ListItemText primary="Home" />

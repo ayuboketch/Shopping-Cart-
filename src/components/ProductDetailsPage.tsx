@@ -15,9 +15,10 @@ import {
 
 // Define the structure of the product data
 interface Product {
-  id: number;
+  name?: string;
+  price?: number;
+  id: string | number;
   title: string;
-  price: number;
   description: string;
   category: string;
   image: string;
@@ -69,7 +70,7 @@ const ProductDetailsPage: React.FC = () => {
   }
 
   return (
-    <Container maxWidth="xxl" sx={{ 
+    <Container maxWidth="xl" sx={{ 
       py: 4, 
       width: '100dvw', 
       height: '70dvh', 
