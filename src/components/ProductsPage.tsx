@@ -3,14 +3,28 @@ import { useState, useEffect } from 'react';
 import { Typography, Container, Grid, Box } from '@mui/material';
 import Cards from './Cards';
 
+// Define a type for the product
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+}
+
 const ProductsPage = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
       .then(res => res.json())
-      .then(data => {
+      .then((data: Product[]) => {
         setProducts(data);
         setLoading(false);
       })
@@ -22,14 +36,14 @@ const ProductsPage = () => {
 
   if (loading) {
     return (
-      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', alignText: 'center' }}>
-        <Typography variant="h4" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', alignText: 'center' }}>Loading...</Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', textAlign: 'center' }}>
+        <Typography variant="h4">Loading...</Typography>
       </Box>
     );
   }
 
   return (
-    <Container maxWidth="xl" sx={{ py: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+    <Container maxWidth="xl" sx={{ py: 4, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
       <Typography variant="h4" gutterBottom>
         All Products
       </Typography>

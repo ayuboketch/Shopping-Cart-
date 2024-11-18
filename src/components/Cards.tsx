@@ -1,5 +1,5 @@
 // Cards.tsx
-import React from 'react';
+// import React from 'react';
 import { Card, CardContent, Typography, Box, Rating } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import './Card.css'

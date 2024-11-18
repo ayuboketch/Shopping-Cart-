@@ -1,23 +1,29 @@
-import { useState } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
+
+interface FormData {
+  username: string;
+  email: string;
+  password: string;
+}
 
 function Signup() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     username: '',
     email: '',
     password: '',
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
-      [name]: value
+      [name]: value,
     }));
   };
 

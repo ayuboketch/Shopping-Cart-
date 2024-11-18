@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   AppBar,
@@ -25,13 +25,13 @@ import {
 } from '@mui/icons-material';
 
 // Navbar Component
-const Navbar = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  const handleMenu = (e) => {
+  const handleMenu = (e: MouseEvent<HTMLElement>) => {
     setAnchorEl(e.currentTarget);
   };
 
@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="sticky" >
+    <AppBar position="sticky">
       <Toolbar>
         {isMobile && (
           <IconButton
@@ -91,17 +91,26 @@ const Navbar = () => {
           anchor="left"
           open={mobileMenuOpen}
           onClose={() => setMobileMenuOpen(false)}
-        />
+        >
           <List sx={{ width: 250 }}>
-          <ListItem component={Link} to="/" onClick={() => setMobileMenuOpen(false)} button>
-            <ListItemText primary="Home" />
-          </ListItem>
-          <ListItem component={Link} to="/products" onClick={() => setMobileMenuOpen(false)} button>
-            <ListItemText primary="Products" />
-          </ListItem>
-        </List>
-
-
+            <ListItem
+              component={Link as React.ElementType}
+              to="/"
+              onClick={() => setMobileMenuOpen(false)}
+              button
+            >
+              <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem
+              component={Link as React.ElementType}
+              to="/products"
+              onClick={() => setMobileMenuOpen(false)}
+              button
+            >
+              <ListItemText primary="Products" />
+            </ListItem>
+          </List>
+        </Drawer>
         <Menu
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
